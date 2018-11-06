@@ -1,0 +1,70 @@
+
+body {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+}
+
+.grubhub-minidiv {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: #f63440;
+  color: white;
+  font-weight: bolder;
+  padding: 2px;
+  margin-left: 20px;
+}
+
+.form-control {
+  background-color: #f63440;
+}
+
+.row{
+  margin-left: 1%;
+}
+
+.order {
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.bag {
+  padding: 10px;
+  color: lightgrey;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+ .sticky-top {
+  margin-top: 0;
+  margin-right: 0;
+  box-shadow: -2px 0px 5px 1px #aaaaaa;
+  height: 100vh;
+  width: 100%;
+  float: right;
+}
+div #main {
+  width: 400px;
+}
+
+.navbar {
+  padding: 2px;
+}
+
+img {
+  filter: grayscale(30%);
+  width:60%;
+}
+.img {
+  display:  table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+}
+
+
+
