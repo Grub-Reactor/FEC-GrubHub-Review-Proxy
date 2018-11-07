@@ -13,24 +13,24 @@ var reviewsServer = 'http://localhost:3002';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/restaurants/:rest_id', express.static('public'));
+app.use('/:rest_id', express.static('public'));
 
-// app.all("/restaurants/:rest_id/banners/*", function(req, res) {
-//   console.log('redirecting to Server1');
-//   proxy.web(req, res, {target: bannerServer});
-// });
+app.all("/:rest_id/banners/*", function(req, res) {
+  console.log('redirecting to Server1');
+  proxy.web(req, res, {target: bannerServer});
+});
 
-// app.get("/grub-reactor/:id", function(req, res) {
-//   console.log('redirecting to Server2');
-//   apiProxy.web(req, res, {target: menuServer});
-// });
+app.get("/grub-reactor/:rest_Id/menu/*", function(req, res) {
+  console.log('redirecting to Server2');
+  proxy.web(req, res, {target: menuServer});
+});
 
-// app.all("/nearby/*", function(req, res) {
-//   console.log('redirecting to Server3');
-//   apiProxy.web(req, res, {target: nearbyServer});
-// });
+app.all("/restaurant/:id/*", function(req, res) {
+  console.log('redirecting to Server3');
+  apiProxy.web(req, res, {target: nearbyServer});
+});
 
-app.all("/restaurants/:rest_id/allreviews/*", function(req, res) {
+app.all("/:rest_id/allreviews/*", function(req, res) {
   console.log('redirecting to Server3');
   proxy.web(req, res, {target: reviewsServer});
 });
