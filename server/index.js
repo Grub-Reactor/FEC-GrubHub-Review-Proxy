@@ -1,8 +1,7 @@
 const bodyParser = require('body-parser');
 const express    = require('express');
 const app        = express();
-// const request = require('request');
-// const http       = require('http');
+
 const httpProxy  = require('http-proxy');
 const proxy   = httpProxy.createProxyServer();
 const morgan = require('morgan');
@@ -10,10 +9,8 @@ const PORT = 3000;
 
 const bannerServer = 'http://localhost:3005';
 const menuServer = 'http://localhost:3001';
-// const nearbyServer = 'http://localhost:3004';
+const nearbyServer = 'http://localhost:3004';
 var reviewsServer = 'http://localhost:3002';
-
-app.use(morgan('dev'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
