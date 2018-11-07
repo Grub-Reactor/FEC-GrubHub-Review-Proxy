@@ -1,0 +1,27 @@
+{
+  "name": "reviews-module-proxy",
+  "version": "1.0.0",
+  "description": "proxy server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlymolina/Reviews-Module-Proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlymolina/Reviews-Module-Proxy/issues"
+  },
+  "homepage": "https://github.com/mlymolina/Reviews-Module-Proxy#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "http-proxy": "^1.17.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  }
+}
