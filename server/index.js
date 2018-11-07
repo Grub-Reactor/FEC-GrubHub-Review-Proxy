@@ -4,7 +4,6 @@ const app        = express();
 
 const httpProxy  = require('http-proxy');
 const proxy   = httpProxy.createProxyServer();
-const morgan = require('morgan');
 const PORT = 3000;
 
 const bannerServer = 'http://localhost:3005';
