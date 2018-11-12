@@ -18,7 +18,9 @@
   "homepage": "https://github.com/mlymolina/Reviews-Module-Proxy#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
+    "express-http-proxy": "^1.5.0",
     "http": "0.0.0",
     "http-proxy": "^1.17.0",
     "path": "^0.12.7",
